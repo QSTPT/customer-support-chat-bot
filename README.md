@@ -1,9 +1,7 @@
 A minimal, production-shaped **FastAPI** backend that streams a **Groq** LLM response to the client token-by-token over **Server-Sent Events (SSE)**, using the official async `groq` SDK. # FastAPI + Groq SSE Streaming
 
 <img width="92" height="20" alt="Python" src="https://github.com/user-attachments/assets/76cf2d5a-fa0c-4bf5-948f-60dc7ec64c9d" />
-
-!<svg xmlns="http://www.w3.org/2000/svg" width="102" height="20" role="img" aria-label="FastAPI: 0.115+"><title>FastAPI: 0.115+</title><filter id="blur"
-
+<img width="102" height="20" alt="FastAPI" src="https://github.com/user-attachments/assets/8eb69f85-ab02-4716-b0df-9a4cd7234f44" />
 
 
 
