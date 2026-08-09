@@ -1,14 +1,9 @@
-A minimal, production-shaped **FastAPI** backend that streams a **Groq** LLM response to the client token-by-token over **Server-Sent Events (SSE)**, using the official async `groq` SDK.
+A minimal, production-shaped **FastAPI** backend that streams a **Groq** LLM response to the client token-by-token over **Server-Sent Events (SSE)**, using the official async `groq` SDK. # FastAPI + Groq SSE Streaming
 
-<img width="92" height="20" alt="Python" src="https://github.com/user-attachments/assets/76cf2d5a-fa0c-4bf5-948f-60dc7ec64c9d" /># FastAPI + Groq SSE Streaming
+<img width="92" height="20" alt="Python" src="https://github.com/user-attachments/assets/76cf2d5a-fa0c-4bf5-948f-60dc7ec64c9d" />
 
-Python
+FastAPI<svg xmlns="http://www.w3.org/2000/svg" width="102" height="20" role="img" aria-label="FastAPI: 0.115+"><title>FastAPI: 0.115+</title><filter id="blur"><feGaussianBlur stdDeviation="16"/></filter><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="102" height="20" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="51" height="20" fill="#009688"/><rect width="102" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><g transform="scale(.1)"><g aria-hidden="true" fill="#010101"><text x="265" y="150" fill-opacity=".8" filter="url(#blur)" textLength="410">FastAPI</text><text x="265" y="150" fill-opacity=".3" textLength="410">FastAPI</text></g><text x="265" y="140" textLength="410">FastAPI</text></g><g transform="scale(.1)"><g aria-hidden="true" fill="#010101"><text x="755" y="150" fill-opacity=".8" filter="url(#blur)" textLength="410">0.115+</text><text x="755" y="150" fill-opacity=".3" textLength="410">0.115+</text></g><text x="755" y="140" textLength="410">0.115+</text></g></g></svg>
 
-FastAPI
-
-FastAPI
-
-Model
 
 Model
 
