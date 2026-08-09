@@ -2,10 +2,7 @@ A minimal, production-shaped **FastAPI** backend that streams a **Groq** LLM res
 
 <img width="92" height="20" alt="Python" src="https://github.com/user-attachments/assets/76cf2d5a-fa0c-4bf5-948f-60dc7ec64c9d" />
 <img width="102" height="20" alt="FastAPI" src="https://github.com/user-attachments/assets/8eb69f85-ab02-4716-b0df-9a4cd7234f44" />
-
-
-
-Model
+<img width="184" height="20" alt="Model" src="https://github.com/user-attachments/assets/bed75252-0394-41cd-8c88-b755185f2f3f" />
 
 ---
 
