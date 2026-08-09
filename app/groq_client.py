@@ -6,7 +6,6 @@ _client: AsyncGroq | None = None
 
 
 def get_groq_client() -> AsyncGroq:
-    """Lazily create one shared AsyncGroq client for the whole process."""
     global _client
     if _client is None:
         _client = AsyncGroq(api_key=get_settings().groq_api_key)
