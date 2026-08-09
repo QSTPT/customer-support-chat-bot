@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Groq SSE demo</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; }
+      #out { white-space: pre-wrap; border: 1px solid #ddd; padding: 12px; min-height: 120px; }
+      input { width: 70%; padding: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>Groq SSE demo</h1>
+    <input id="q" value="Explain server-sent events in 3 sentences." />
+    <button id="go">Stream</button>
+    <div id="out"></div>
+
+    <script>
+      const out = document.getElementById("out");
+      let es;
+
+      document.getElementById("go").onclick = () => {
+        if (es) es.close();
+        out.textContent = "";
+        const prompt = document.getElementById("q").value;
+        es = new EventSource(`/sse/chat?prompt=${encodeURIComponent(prompt)}`);
+
+        es.addEventListener("token", (e) => {
+          out.textContent += JSON.parse(e.data).delta;
+        });
+        es.addEventListener("error", (e) => {
+          out.textContent += `\n[error] ${e.data ?? "connection error"}`;
+        });
+        es.addEventListener("done", () => es.close());
+      };
+    </script>
+  </body>
+</html>
