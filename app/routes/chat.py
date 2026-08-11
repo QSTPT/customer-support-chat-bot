@@ -2,13 +2,15 @@ import asyncio
 import json
 import logging
 from collections.abc import AsyncGenerator
+from pydantic import ValidationError
 
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends, Request, HTTPException
 from fastapi.responses import StreamingResponse
 
 from app.config import Settings, get_settings
 from app.groq_client import get_groq_client
-from app.schemas import ChatRequest
+from app.schemas import ChatRequest, SupportAnswer
+from app.prompts import build_messages
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/sse", tags=["sse"])
@@ -86,3 +88,50 @@ async def chat_sse_get(
         media_type="text/event-stream",
         headers=SSE_HEADERS,
     )
+    
+
+@router.post("/structured", response_model=SupportAnswer)
+async def chat_structured(
+    body: ChatRequest,
+    settings: Settings = Depends(get_settings),
+) -> SupportAnswer:
+    client = get_groq_client()
+    messages = build_messages(
+        "structured",                      # force it, ignore body.preset
+        body.prompt,
+        json.dumps(SupportAnswer.model_json_schema(), indent=2),
+    )
+
+    for attempt in range(2):
+        completion = await client.chat.completions.create(
+            model=settings.groq_model,
+            messages=messages,
+            temperature=0.2,               # low temp for structured output
+            max_tokens=body.max_tokens,
+            response_format={"type": "json_object"},
+        )
+        raw = completion.choices[0].message.content or ""
+
+        try:
+            return SupportAnswer.model_validate_json(raw)
+        except ValidationError as exc:
+            logger.warning(
+                "schema violation (attempt %d): %s | raw=%s",
+                attempt + 1, exc, raw[:500],
+            )
+            if attempt == 0:
+                messages = [
+                    *messages,
+                    {"role": "assistant", "content": raw},
+                    {
+                        "role": "user",
+                        "content": (
+                            f"That failed validation:\n{exc}\n"
+                            "Return only corrected JSON."
+                        ),
+                    },
+                ]
+                continue
+            raise HTTPException(
+                502, "Model returned malformed output"
+            ) from exc
