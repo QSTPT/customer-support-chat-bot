@@ -658,6 +658,386 @@
       "originalText": "I want to use SSE for this project. not webscoket.",
       "autoResize": true,
       "lineHeight": 1.25
+    },
+    {
+      "id": "W2lZ_0lVR930DOl6VxcLg",
+      "type": "freedraw",
+      "x": -177,
+      "y": 251.5,
+      "width": 88,
+      "height": 62,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aP",
+      "roundness": null,
+      "seed": 477198710,
+      "version": 29,
+      "versionNonce": 1636745066,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1786435386121,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          35,
+          -11
+        ],
+        [
+          53,
+          -25
+        ],
+        [
+          63,
+          -33
+        ],
+        [
+          79,
+          -43
+        ],
+        [
+          88,
+          -48
+        ],
+        [
+          88,
+          -48
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        88,
+        -48
+      ]
+    },
+    {
+      "id": "J19EuERboOJ7spSJxu-zP",
+      "type": "freedraw",
+      "x": -168,
+      "y": 284.5,
+      "width": 171,
+      "height": 82,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aQ",
+      "roundness": null,
+      "seed": 1351929206,
+      "version": 19,
+      "versionNonce": 356414890,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1786435388025,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          18,
+          -3
+        ],
+        [
+          30,
+          -8
+        ],
+        [
+          59,
+          -23
+        ],
+        [
+          105,
+          -46
+        ],
+        [
+          129,
+          -57
+        ],
+        [
+          171,
+          -73
+        ],
+        [
+          171,
+          -73
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        171,
+        -73
+      ]
+    },
+    {
+      "id": "2RBczmfsxZm_vBErVgAnH",
+      "type": "freedraw",
+      "x": -125,
+      "y": 297.5,
+      "width": 258,
+      "height": 59,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aS",
+      "roundness": null,
+      "seed": 745837546,
+      "version": 23,
+      "versionNonce": 2003006838,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1786436319505,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          56,
+          4
+        ],
+        [
+          83,
+          -2
+        ],
+        [
+          141,
+          -14
+        ],
+        [
+          198,
+          -26
+        ],
+        [
+          221,
+          -31
+        ],
+        [
+          249,
+          -37
+        ],
+        [
+          258,
+          -38
+        ],
+        [
+          258,
+          -38
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        258,
+        -38
+      ]
     }
   ],
   "appState": {

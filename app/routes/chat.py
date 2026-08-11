@@ -36,10 +36,7 @@ async def groq_event_stream(
     try:
         stream = await client.chat.completions.create(
             model=settings.groq_model,
-            messages=[
-                {"role": "system", "content": body.system},
-                {"role": "user", "content": body.prompt},
-            ],
+            messages=body.messages,
             temperature=body.temperature,
             max_tokens=body.max_tokens,
             stream=True,
